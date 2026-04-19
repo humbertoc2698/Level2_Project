@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Search</a> | 
+            <a href="watchlist.html">Watchlist</a> |
+            <a href="contact.html">Suggestions</a>
+        </nav>
+    </header>
+
+    <main id="detailsContainer"> <form id="suggestionForm">
+            <label for="userName">Your Name:</label><br>
+            <input type="text" id="userName" required><br><br>
+
+            <label for="userEmail">Your Email:</label><br>
+            <input type="email" id="userEmail" required><br><br>
+
+            <label for="movieTitle">Movie Suggestion:</label><br>
+            <input type="text" id="movieTitle" required><br><br>
+
+            <label for="message">Why should we add it?</label><br>
+            <textarea id="message" rows="4" style="width: 250px;"></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+        <div id="formFeedback"></div>
+    </main>
+
+    <script src="suggestions.js"></script>
+</body>
+</html>
